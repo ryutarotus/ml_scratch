@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-class Liner_Regression():
+class Linear_Regression():
     def __init__(self):
         self.intercept = None
         self.coef = None
@@ -16,7 +16,7 @@ class Liner_Regression():
         self.intercept = intercept
         return None
     
-    def forward(self, x):
+    def predict(self, x):
         if self.intercept == None or self.coef == None:
             print('Please fit model !')
             return 'process is interruputed'
@@ -26,6 +26,6 @@ class Liner_Regression():
         return y
     
     def plot_result(self, x, y, pred):
-        plt.scatter(w, l)
-        plt.plot(w, pred)
+        plt.scatter(x, y)
+        plt.plot(x, pred)
         plt.show()
