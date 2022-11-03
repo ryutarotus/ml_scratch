@@ -36,11 +36,11 @@ class DecisionTreeNode():
     def predict(self, data):
         #print(f'gini_min: {self.gini_min}, depth: {self.depth}')
         if self.gini_min == 0.0 or self.depth == self.max_depth or len(self.target) == 0:
-            """
+            
             if self.label == None:
-                print(self.label)
-            """
+                self.label = target[0]           
             return self.label
+        
         else:
             if data[self.feature] > self.threshold:
                 return self.left.predict(data)
