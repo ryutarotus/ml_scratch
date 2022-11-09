@@ -7,6 +7,7 @@ File Tree
 |-- models  
 |   |-- decision_tree.py  
 |   |-- linear_regression.py  
+|   |-- pca.py  
 |   `-- svm.py
 `-- preprossing
     |-- standardscaler.py
