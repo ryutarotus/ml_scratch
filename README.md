@@ -5,7 +5,8 @@ File Tree
 |-- README.md  
 |-- __init__.py  
 |-- models  
-|   |-- decision_tree.py  
+|   |-- decision_tree.py
+|   |-- kmeans.py
 |   |-- linear_regression.py  
 |   |-- pca.py  
 |   `-- svm.py
